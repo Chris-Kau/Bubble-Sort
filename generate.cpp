@@ -7,17 +7,21 @@
 #include <fstream>
 using namespace std;
 
-int main(int arc, char *argv[])
+int main(int argc, char *argv[])
 {
-	if (argc < 4)
+	if (argc != 4)
 	{
-		cout << "Please enter 3 parameters:\n";
-		cout << "	Parameter 1: total count of numbers you want";
-		cout << "	Parameter 2: min value.\n";
-		cout << "	Parameter 3: max value.\n";
 		cout << "Example: %generate 10000000 100000 999999\n";
-		exit(EXIT_SUCCESS);
+	}else{
+		int count = stoi(argv[1]);
+		int min = stoi(argv[2]);
+		int max = stoi(argv[3]);
+		ofstream fout("numbers.dat");
+		srand(time(0));	
+		for(int i = 0; i < count; i++)
+		{
+			fout << (rand() % (max-min+1)+min) << endl;
+		}
 	}
-
-	for (int i = argv[1]; i <= )
+	return 0;
 }
