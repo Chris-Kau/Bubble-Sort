@@ -1,11 +1,11 @@
 Generating 1000000 random numbers
 Starting system sort
 
-real	0m0.125s
-user	0m0.437s
-sys	0m0.058s
+real	0m0.007s
+user	0m0.008s
+sys	0m0.000s
 Starting mysort
 
-real	19m53.329s
-user	19m52.829s
-sys	0m0.500s
+real	0m0.566s
+user	0m0.546s
+sys	0m0.020s

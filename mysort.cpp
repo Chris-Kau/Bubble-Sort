@@ -9,13 +9,13 @@
 using namespace std;
 void bubble(int A[], int size)
 {
-	for(int i = 0; i < size; i++)
+	for(int i = 0; i < size - 1; i++)
 	{
-		for(int j = i + 1; j < size; j++ )
+		for(int j = 0; j < size - i - 1; j++ )
 		{
-			if (A[i] > A[j])
+			if (A[j] > A[j+1])
 			{
-				swap(A[i], A[j]);
+				swap(A[j], A[j+1]);
 			}
 		}
 	}
